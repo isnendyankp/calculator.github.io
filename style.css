@@ -12,3 +12,10 @@ body {
   background: whitesmoke;
   /* background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
 }
+
+.calculator {
+  background: white;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+}
