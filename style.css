@@ -65,6 +65,16 @@ body {
   padding: 10px;
 }
 
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 100;
+  border: none;
+  background: rgb(200, 200, 200);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .equal-sign {
   grid-column: -2;
   grid-row: 2 / span 4;
