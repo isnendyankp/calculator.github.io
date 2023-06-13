@@ -75,6 +75,12 @@ button {
   cursor: pointer;
 }
 
+.operator {
+  background: grey;
+  color: white;
+  font-size: 30px;
+}
+
 .equal-sign {
   grid-column: -2;
   grid-row: 2 / span 4;
