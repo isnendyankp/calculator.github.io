@@ -79,6 +79,10 @@ button:hover {
   filter: brightness(110%);
 }
 
+.clear:hover {
+  filter: brightness(90%);
+}
+
 .operator {
   background: grey;
   color: white;
