@@ -75,6 +75,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  filter: brightness(110%);
+}
+
 .operator {
   background: grey;
   color: white;
