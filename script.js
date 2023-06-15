@@ -4,7 +4,9 @@ const clearBtn = document.getElementById('clear-btn');
 
 
 function sendNumberValue(number) {
-    calculatorDisplay.textContent = number;
+    // If current display value is 0, replace it, if not add number to display value
+    const displayValue = calculatorDisplay.textContent;
+    calculatorDisplay.textContent = displayValue === '0' ? number : displayValue + number;
 }
 
 
