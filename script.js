@@ -4,7 +4,7 @@ const clearBtn = document.getElementById('clear-btn');
 
 
 function sendNumberValue(number) {
-    console.log(number);
+    calculatorDisplay.textContent = number;
 }
 
 
