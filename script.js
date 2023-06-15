@@ -12,6 +12,10 @@ function sendNumberValue(number) {
 
 console.log(inputBtns);
 
+function addDecimal() {
+  
+}
+
 // Add Event Listeners for numbers, operators, decimal
 inputBtns.forEach((inputBtn) => {
   if (inputBtn.classList.length === 0) {
@@ -19,7 +23,7 @@ inputBtns.forEach((inputBtn) => {
   } else if (inputBtn.classList.contains('operator')) {
     inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
   } else if (inputBtn.classList.contains('decimal')) {
-    inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
+    inputBtn.addEventListener('click', () => addDecimal());
   }
 });
 
