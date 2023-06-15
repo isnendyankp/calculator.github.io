@@ -16,5 +16,7 @@ inputBtns.forEach((inputBtn) => {
     inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
   } else if (inputBtn.classList.contains('operator')) {
     inputBtn.addEventListener('click', () => useOperator(inputBtn.value));
+  } else if (inputBtn.classList.contains('decimal')) {
+    inputBtn.addEventListener('click', () => addDecimal());
   }
 });
