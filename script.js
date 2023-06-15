@@ -13,7 +13,10 @@ function sendNumberValue(number) {
 console.log(inputBtns);
 
 function addDecimal() {
-  
+  // If no decimal, add one
+  if (!calculatorDisplay.textContent.includes('.')) {
+    calculatorDisplay.textContent = `${calculatorDisplay.textContent}.`;
+  }
 }
 
 // Add Event Listeners for numbers, operators, decimal
