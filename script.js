@@ -13,7 +13,6 @@ function sendNumberValue(number) {
 }
 
 
-console.log(inputBtns);
 
 function addDecimal() {
   // If no decimal, add one
@@ -28,6 +27,9 @@ function useOperator(operator) {
   if (!firstValue) {
     firstValue = currentValue;
   }
+  operatorValue = operator;
+  console.log('firstValue', firstValue);
+  console.log('operator', operatorValue);
 }
 
 // Add Event Listeners for numbers, operators, decimal
