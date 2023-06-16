@@ -23,7 +23,7 @@ function addDecimal() {
 }
 
 function useOperator(operator) {
-  
+  const currentValue = Number(calculatorDisplay.textContent);
 }
 
 // Add Event Listeners for numbers, operators, decimal
