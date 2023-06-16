@@ -24,6 +24,10 @@ function addDecimal() {
 
 function useOperator(operator) {
   const currentValue = Number(calculatorDisplay.textContent);
+   // Assign firstValue if no value
+  if (!firstValue) {
+    firstValue = currentValue;
+  }
 }
 
 // Add Event Listeners for numbers, operators, decimal
