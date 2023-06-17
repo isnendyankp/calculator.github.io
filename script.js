@@ -7,9 +7,15 @@ let operatorValue = '';
 let awaitingNextValue = false;
 
 function sendNumberValue(number) {
+  // Replace current display value if first value is entered
+  if (awaitingNextValue) {
+    calculatorDisplay.textContent = number;
+    awaitingNextValue = false;
+  } else {
     // If current display value is 0, replace it, if not add number to display value
     const displayValue = calculatorDisplay.textContent;
     calculatorDisplay.textContent = displayValue === '0' ? number : displayValue + number;
+  }
 }
 
 function addDecimal() {
