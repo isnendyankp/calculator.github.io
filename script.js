@@ -12,8 +12,6 @@ function sendNumberValue(number) {
     calculatorDisplay.textContent = displayValue === '0' ? number : displayValue + number;
 }
 
-
-
 function addDecimal() {
   // If no decimal, add one
   if (!calculatorDisplay.textContent.includes('.')) {
@@ -46,6 +44,9 @@ inputBtns.forEach((inputBtn) => {
 
 // Reset all values, display
 function resetAll() {
+  firstValue = 0;
+  operatorValue = '';
+  awaitingNextValue = false;
   calculatorDisplay.textContent = '0';
 }
 
