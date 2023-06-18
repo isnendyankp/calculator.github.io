@@ -27,6 +27,11 @@ function addDecimal() {
   }
 }
 
+// Calculate first and second values depending on operator
+const calculate = {
+  
+}
+
 function useOperator(operator) {
   const currentValue = Number(calculatorDisplay.textContent);
   // Prevent multiple operators
