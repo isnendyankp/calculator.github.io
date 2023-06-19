@@ -50,6 +50,8 @@ function useOperator(operator) {
     firstValue = currentValue;
   } else {
     console.log(firstValue, operatorValue, currentValue);
+    const calculation = calculate[operatorValue](firstValue, currentValue);
+    calculatorDisplay.textContent = calculation;
   }
   // Ready for next value, store operator
   awaitingNextValue = true;
