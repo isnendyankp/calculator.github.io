@@ -47,11 +47,10 @@ function useOperator(operator) {
     operatorValue = operator;
     return;
   }
-   // Assign firstValue if no value
+  // Assign firstValue if no value
   if (!firstValue) {
     firstValue = currentValue;
   } else {
-    console.log(firstValue, operatorValue, currentValue);
     const calculation = calculate[operatorValue](firstValue, currentValue);
     calculatorDisplay.textContent = calculation;
     firstValue = calculation;
@@ -66,12 +65,11 @@ inputBtns.forEach((inputBtn) => {
   if (inputBtn.classList.length === 0) {
     inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
   } else if (inputBtn.classList.contains('operator')) {
-    inputBtn.addEventListener('click', () => useOperator(inputBtn.value))
+    inputBtn.addEventListener('click', () => useOperator(inputBtn.value));
   } else if (inputBtn.classList.contains('decimal')) {
     inputBtn.addEventListener('click', () => addDecimal());
   }
 });
-
 
 // Reset all values, display
 function resetAll() {
