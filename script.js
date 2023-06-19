@@ -43,8 +43,10 @@ const calculate = {
 function useOperator(operator) {
   const currentValue = Number(calculatorDisplay.textContent);
   // Prevent multiple operators
-  if (operatorValue && awaitingNextValue)  return;
-    
+  if (operatorValue && awaitingNextValue) {
+    operatorValue = operator;
+    return;
+  }
    // Assign firstValue if no value
   if (!firstValue) {
     firstValue = currentValue;
